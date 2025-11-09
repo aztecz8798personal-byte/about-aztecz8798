@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aztecz8798 - GTA V Modder & Gamer</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+    /* Basic Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Press Start 2P', cursive;
+    }
+
+    body {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #ff00ff, #00ffff, #ff0000, #00ff00);
+        background-size: 400% 400%;
+        animation: gradientShift 15s ease infinite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        padding: 20px;
+    }
+
+    @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .container {
+        background: rgba(0,0,0,0.85);
+        border-radius: 20px;
+        padding: 40px;
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 0 20px #0ff, 0 0 40px #f0f, 0 0 60px #ff0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        color: #0ff;
+        margin-bottom: 20px;
+        text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+
+    p {
+        font-size: 0.75rem;
+        margin-bottom: 30px;
+        line-height: 1.4;
+        color: #fff;
+    }
+
+    .skills {
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .skills h2 {
+        color: #ff0;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        text-shadow: 0 0 5px #ff0, 0 0 10px #ff0;
+    }
+
+    .skills ul {
+        list-style-type: none;
+    }
+
+    .skills li {
+        margin-bottom: 5px;
+        font-size: 0.75rem;
+        color: #0ff;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 8px 20px;
+        margin: 5px;
+        border-radius: 50px;
+        background: #111;
+        color: #0ff;
+        text-decoration: none;
+        font-size: 0.7rem;
+        border: 1px solid #0ff;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background: #0ff;
+        color: #111;
+    }
+
+    .btn.support {
+        border-color: #ff0;
+        color: #ff0;
+    }
+
+    .btn.support:hover {
+        background: #ff0;
+        color: #111;
+    }
+
+    .contact-links {
+        margin-top: 15px;
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        animation: fadeIn 0.5s ease forwards;
+    }
+
+    .contact-links a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.75rem;
+        background: #222;
+        padding: 6px 12px;
+        border-radius: 50px;
+        border: 1px solid #0ff;
+        transition: 0.3s;
+    }
+
+    .contact-links a:hover {
+        background: #0ff;
+        color: #111;
+    }
+
+    .contact-links img {
+        width: 16px;
+        height: 16px;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media(max-width: 500px){
+        .container {
+            padding: 20px;
+        }
+        h1 { font-size: 1.2rem; }
+        p, .skills li, .btn { font-size: 0.65rem; }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Aztecz8798</h1>
+    <p>Modding GTA V has been a fun hobby of mine, and I also experiment with HLSL shader work, even though I’m not a professional yet. Beyond modding, gaming is one of my biggest passions, whether it’s testing new mods, roleplaying, or just enjoying my favorite titles</p>
+    
+    <div class="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>GTA V Script Modding (C# & LUA)</li>
+            <li>LemonUI scripting</li>
+            <li>Gaming: Competitive & Roleplay</li>
+        </ul>
+    </div>
+
+    <a class="btn" href="https://www.gta5-mods.com/users/Aztecz8798" target="_blank">My Mods</a>
+    <button class="btn" id="contactBtn">Contact Me</button>
+
+    <div class="contact-links" id="contactLinks">
+        <a href="https://discord.com/invite/2BbdRQvgMj" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord Logo"> Discord
+        </a>
+        <a href="https://www.youtube.com/channel/UCiI6husKnY-FqFyYTtBv4jg" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube Logo"> YouTube
+        </a>
+        <a href="mailto:aztecz8798.personal@gmail.com">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail Logo"> Gmail
+        </a>
+    </div>
+
+    <a class="btn support" href="https://www.patreon.com/c/AdollFitler_McTexture" target="_blank">Support Me</a>
+</div>
+
+<script>
+    const contactBtn = document.getElementById('contactBtn');
+    const contactLinks = document.getElementById('contactLinks');
+
+    contactBtn.addEventListener('click', () => {
+        if(contactLinks.style.display === 'flex'){
+            contactLinks.style.display = 'none';
+        } else {
+            contactLinks.style.display = 'flex';
+        }
+    });
+</script>
+</body>
+</html>
